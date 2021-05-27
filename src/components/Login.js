@@ -10,6 +10,7 @@ const Login = (props) => {
                 </a>
                 <div>
                     <Join>Join now</Join>
+                    <SignIn>Sign in</SignIn>
                 </div>
             </Nav>
         </Container>
@@ -31,6 +32,7 @@ const Nav = styled.nav`
     justify-content: space-between;
     flex-wrap: nowrap;
 
+    /* 4 why not working */
     & > a {
         /* width: 135px; */
         height:34px;
@@ -57,6 +59,24 @@ const Join = styled.a`
         &:hover{
             background-color: rgba(0, 0, 0, 0.08);
             color: rgba(0, 0, 0, 0.9);
+            text-decoration: none;
+        }
+    `;
+
+    const SignIn = styled.a`
+        box-shadow: inset0 0 0 1px #0a66c2;
+        color: #0a66c2;
+        border-radius: 24px;
+        transition-duration: 167mx;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 40px;
+        padding: 10px 24px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0);
+        &:hover{
+            background-color: rgba(112, 181, 249, 0.15);
+            color: #0a66c2;
             text-decoration: none;
         }
     `;
