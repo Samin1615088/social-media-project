@@ -1,9 +1,25 @@
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+//import user file
 import './App.css';
+import Login from './components/Login';
+
 
 function App() {
   return (
     <div className="App">
-      <h1>Let's build a social app together</h1>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Login />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
