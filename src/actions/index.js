@@ -5,7 +5,7 @@ export const setUser = (payload) => ({
     type: SET_USER,
     user: payload,
 })
- 
+
 export function signInAPI() {
     return (dispatch) => {
         auth
@@ -22,10 +22,19 @@ export function signInAPI() {
 
 export function getUserAuth() {
     return (dispatch) => {
-        auth.onAuthStateChanged( async (user) => {
-            if(user) {
+        auth.onAuthStateChanged(async (user) => {
+            if (user) {
                 dispatch(setUser(user))
             }
         })
+    }
+}
+
+export function signOutAPI() {
+    return (dispatch) => {
+        auth.
+            signOut()
+            .then(() => dispatch(setUser(null)))
+            .catch((error) => console.log(error.message))
     }
 }
