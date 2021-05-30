@@ -22,7 +22,7 @@ const Login = (props) => {
             </Nav>
             <Section>
                 <Hero>
-                    <h1>Welcome to our social community</h1>
+                    <h1>Welcome to Alapon social community</h1>
                     <img src="/images/login-hero.svg" alt="login page image" />
                 </Hero>
                 <Form>
