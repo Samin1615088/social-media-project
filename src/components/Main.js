@@ -32,9 +32,9 @@ const Main = (props) => {
     };
     return (
         <>
-            {/* {props.articles.length === 0 ? (
+            {props.articles.length === 0 ? (
                 <p>There are no articles</p>
-            ) : ( */}
+            ) : (
                 <Container>
                     <ShareBox>
                         <div>
@@ -188,7 +188,7 @@ const Main = (props) => {
                         handleClick={handleClick}
                     />
                 </Container>
-            {/* )} */}
+            )} 
         </>
     );
 };
